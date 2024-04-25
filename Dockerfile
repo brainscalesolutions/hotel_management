@@ -5,7 +5,7 @@ FROM ubuntu:22.04
 WORKDIR /app
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update -y
-RUN apt install apache2 mariadb-server php libapache2-mod-php php-mysql -y
+RUN apt install apache2  php libapache2-mod-php php-mysql -y
 
 # Copy all files from the current directory into the container's /app directory
 COPY . .
